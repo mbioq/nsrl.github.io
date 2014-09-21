@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>首页</title>
+    <title>When Go meets Raspberry Pi - When Go meets Raspberry Pi</title>
+  
+    <meta name="description" content="When Go meets Raspberry Pi 树莓派">
   
     <meta name="author" content="Dzh">
 
@@ -15,7 +17,9 @@
     <link href="/assets/twitter/stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
 <link href="/assets/twitter/stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
 <link href="/assets/twitter/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css" rel="stylesheet" media="all">
- 
+
+
+  <link rel="shortcut icon" href="http://tp3.sinaimg.cn/1808008002/50/5649301600/1">
 
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
@@ -28,10 +32,12 @@
 
   <body>
 
-    <div class="navbar">
+<a href="https://github.com/hugozhu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="navbar">      
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">nsrl&#39;s blog</a>
+          <a class="brand" href="/" style="padding-left:46px;">nsrl&#39;s blog</a>
           <ul class="nav">
             
               
@@ -69,9 +75,15 @@
 
 
             
+            <li style="padding-left:10px">
+              <form class="navbar-search pull-right" method="GET" action="https://www.google.com/search">
+                <input type="text" name="as_q" class="search-query" placeholder=" Search... ">
+                <input type="hidden" name="as_sitesearch" value="hugozhu.myalert.info">
+              </form>               
+            </li>
           </ul>
         </div>
-      </div>
+      </div>     
     </div>
 
     <div class="container">
@@ -79,82 +91,158 @@
       <div class="content">
         
 <div class="page-header">
-  <h1>首页 </h1>
+  <h1>When Go meets Raspberry Pi </h1>
 </div>
 
 <div class="row">
   <div class="span12">
     
-<h2>Gor已经为你编译完成了</h2>
-<p>
-  这段文字位于pages/index.html ,使用以下命令获取帮助或访问gor官网
-</p>
-<pre><code>gor help</code></pre>
+<div class="jumbotron">
+<p class="lead">This site is running on a <a href="http://www.raspberrypi.org" target="_blank">Raspberry Pi</a>, most codes are written in <a href="http://golang.org" target="_blank">Go</a> programming language</p>
+</div>
 
+<hr/>
+<div class="row-fluid marketing">
+<div class="span6">
+<h3>最近文章</h3>
+  
+  <h4><a href="/2014/09/21/go-windows-goexif.html">go-windows-goexif</a></h4>
+  <p>Go goexif</p>
+  
+  <h4><a href="/2014/09/21/Python-urllib.html">Python-urllib</a></h4>
+  <p>&lt;nil&gt;</p>
+  
+  <h4><a href="/2014/09/04/51-useful-linux-command.html">常用Linux命令</a></h4>
+  <p>Useful Liunx Command</p>
+  
+  <h4><a href="/2014/08/27/49-fast-sync-between-mobile-phone-and-server.html">简单手机应用同步协议设计和实现</a></h4>
+  <p>Sync data between mobile phone and server</p>
+  
+  <h4><a href="/2014/08/03/50-use-gradle-to-customize-apk-build.html">使用Gradle生成一个App的不同版本，且可以同时安装在一个手机上</a></h4>
+  <p>Customizing your Android App build with Gradle</p>
+  
+  <h4><a href="/2014/07/26/48-install-3rd-party-app-on-tv-box.html">安装第三方App到电视盒子</a></h4>
+  <p>Install 3rd party apps on Android based TV Box</p>
+  
+  <h4><a href="/2014/07/23/47-use-gradle-properties-to-set-alternative-android-build-tools.html">Gradle的Properties</a></h4>
+  <p>Use Gradle Properties to set alternative version of Android SDK build-tools and Android Gradle Plugin in team project.</p>
+  
+  <h4><a href="/2014/06/29/46-async-android.html">Android异步编程</a></h4>
+  <p>Asynchronous Android</p>
+  
+  <h4><a href="/2014/02/10/45-android-development-productivity-tips.html">提高Android开发效率的小贴士</a></h4>
+  <p>Android development productivity tips</p>
+  
+  <h4><a href="/2013/11/27/44-copy-android-app-data.html">拷贝Android应用的数据</a></h4>
+  <p>Copy Android application data</p>
+  
 
-<h2>最近更新</h2>
-
-
-<div class="post">
-  <h3 class="title"><a href="/2014/09/21/go-windows-goexif.html">go-windows-goexif</a> <span class="date">2014-09-21</span></h3>
-
-  <p>纯go版:</p>
-
-<pre><code>go get github.com/rwcarlsen/goexif/exif
-</code></pre>
-
-<p>cgo版:</p>
-
-<pre><code># 1. 下载libexif源码,获取头文件
-# 2. 下载exif.dll, 记得下载cygwin下的版本, 直接google得到的版本不靠谱,版本太老
-go get github.com/gosexy/exif
-</code></pre>
-
-
-  <div class="more">
-    <a href="/2014/09/21/go-windows-goexif.html" class="btn">read more..</a>
+  <div class="pagination">
+    <ul>
+        <li><a href="/posts/2/">更多文章...</a></li>
+    </ul>
   </div>
 </div>
 
-<div class="post">
-  <h3 class="title"><a href="/2014/09/21/Python-urllib.html">Python-urllib</a> <span class="date">2014-09-21</span></h3>
+<div class="span6">
+<h3>最近项目</h3>
+  <h4><a href="http://github.com/hugozhu/rpi">WiringPi-Go</a></h4>
+  <p>使用Go语言来实现GPIO编程</p>
+  <h4><a href="http://myalert.info/">实时股价提醒</a></h4>
+  <p>支持港股和美股的实时报价和多种提醒方式(手机Push消息，Web长连接Poll，<a href="http://weibo.com/myalert">微博@提醒</a>），并提供持仓一览等功能
+     <a href="http://42.120.49.45/download/">iPhone客户端下载</a>
+  </p>
 
-  <p>urllib模块提供的上层接口，使我们可以像读取本地文件一样读取www和ftp上的数据。每当使用这个模块的时候，老是会想起公司产品的客户端，同事用C++下载Web上的图片，那种“痛苦”的表情。我以前翻译过libcurl教程，这是在C/C++环境下比较方便实用的网络操作库，相比起 libcurl，Python的urllib模块的使用门槛则低多了。可能有些人又会用效率来批评Python，其实在操作网络，或者在集群交互的时候， 语言的执行效率绝不是瓶颈。这种情况下，一个比较好的方法是，将python嵌入到C/C++中，让Python来完成一些不是核心的逻辑处理。又扯远了，废话少说，开始urllib之旅吧~~ （前几天我用这个模块写了个蜘蛛，感兴趣的同学可以在以前的博客中找到代码）
-先看一个例子，这个例子把Google首页的html抓取下来并显示在控制台上：</p>
+  <h4><a href="https://go.myalert.info/deal_alert">海外代购Deal实时提醒</a></h4>
+  <p>设置关键词，当有优惠出现时，第一时间通过微博@提醒你,数据包括了微博上的海淘大号，以及同步过来的Dealsea和Fatwallet上的数据集中在<a href="http://weibo.com/mydealsea">@海外购优惠汇</a></p>
 
-<pre><code># 别惊讶，整个程序确实只用了两行代码  
-import urllib  
-print urllib.urlopen('http://www.baidu.com').read() 
-</code></pre>
+  <h4><a href="https://go.myalert.info/twitter">微博同步到Twitter</a></h4>
+  <p>打开你和世界交流的窗口：<a href="https://github.com/hugozhu/weibo2twitter/blob/master/src/twitter.go">同步程序代码</a>
+  </p>
 
-<hr />
+  <h4><a href="https://go.myalert.info/laiwang">微博同步到来往</a></h4>
+  <p>设置关联后，你发的微博会自动同步到来往：
+     <a href="https://github.com/hugozhu/weibo2twitter/blob/master/src/laiwang.go">同步程序代码</a>
+  </p>
 
-<pre><code># 别惊讶，整个程序确实只用了两行代码
-import urllib
-print urllib.urlopen('http://www.baidu.com').read()
-#urllib.urlopen(url[, data[, proxies]]) :
-</code></pre>
+<h4><a href="https://github.com/hugozhu/yunpan_pi">阿里云盘Pi客户端</a></h4>
+  <p>已完成根据文件最后修改时间的同步</p>
 
+  <h4><a href="http://myalert.info/">微信查实时股价</a></h4>
+  <p> <div align="center"><img src="/assets/media/qrcode.png" width="160" height="160"/></div>
+      关注微信号： <b>myalert</b> ，输入股票代码或公司名称即可获取实时报价，这个服务后台只有一个Pi。
+<div>
+<br/>
+</div>
+          </p>
+        </div>
+      </div>
 
-  <div class="more">
-    <a href="/2014/09/21/Python-urllib.html" class="btn">read more..</a>
+<hr/>
+
+<div style="float:right;padding-right:80px">
+<a data-type="3" data-tmpl="320x250" data-tmplid="186" data-rd="2" data-style="2" data-border="1" href="#"></a>
+</div>
+
+<ul><h5>常用链接</h5>
+<li><a href="https://gist.github.com/4440996">在Raspberry Pi上听豆瓣电台</a></li>
+<li><a href="http://elinux.org/RPi_Easy_SD_Card_Setup#Copying_an_image_to_the_SD_card_in_Mac.C2.A0OS.C2.A0X_.28Only_with_graphical_interface.29">Mac上制作Pi的启动SD卡</a></li>
+<li><a href="http://dave.cheney.net/2012/09/25/installing-go-on-the-raspberry-pi">How to get Go running on Raspberry Pi</a>
+<li><a href="http://www.gmcbay.com/2013/01/i2c-programming-in-go/">I2C Programming in Go</a></li>
+<li><a href="http://trouch.com/2012/08/03/airpi-airplay-audio-with-raspberry/">AirPi – AirPlay audio with Raspberry</a></li>
+<li><a href="http://elinux.org/RPi_VerifiedPeripherals#USB_Webcams_2">和Pi兼容的外设列表</a></li>
+<li><a href="http://hugozhu.myalert.info/2013/02/26/dynamic-dns-script.html">Pi上可运行的DNSPod的动态域名程序</a></li>
+<li><a href="https://github.com/MisaZhu/Robotics/wiki/">如何制作机器人</a></li>
+<li><a href="http://hugozhu.myalert.info/2013/02/27/在Pi和Github上搭建自己的个人博客.html">在Pi和Github上搭建自己的个人博客</a></li>
+</ul>
+
+<div>
+<ul><h5>友情链接 </h5>
+<li><a href="http://kongwu.net" target="_blank">空无</a> 搞数据的</li>
+<li><a href="http://a7b.cn/" target="_blank">伏威</a> 搞无线的</li>
+<li><a href="http://dqylyln.dyndns.org" target="_blank">齐昦</a> 搞应用的</li>
+<li><a href="http://minzhou.us.to" target="_blank">Min Zhou</a> 搞分布式的</li>
+<li><a href="http://rpi.freemindworld.com" target="_blank">樊夕</a> 搞搜索的</li>
+<li><a href="http://blog.donghao.org" target="_blank">三百</a> 搞内核的</li>
+<li><a href="http://www.bigendian123.com" target="_blank">Skoo</a> 搞Golang的</li>
+</ul>
+</div>
+
+<hr/>
+<div align="center">
+<a href="https://xively.com/feeds/92372"><img src="https://api.cosm.com/v2/feeds/92372/datastreams/1.png?width=340&height=180&colour=%23f15a24&duration=2days&title=Raspberry%20Pi%E7%9A%84CPU%20Load&show_axis_labels=false&detailed_grid=true&scale="/></a>
+
+<a href="https://xively.com/feeds/92372"><img src="https://api.cosm.com/v2/feeds/92372/datastreams/2.png?width=340&height=180&colour=%23f15a24&duration=2days&title=Raspberry%20Pi%E7%9A%84CPU%E6%B8%A9%E5%BA%A6&show_axis_labels=false&detailed_grid=true&scale="/></a>
+
+</div>
+
+<br/><br/>
+
   </div>
 </div>
 
-  </div>
-</div>
+        <hr/>
+
+        <center>
+
+<script type="text/javascript"> (function(win,doc){ var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0]; if (!win.alimamatk_show) { s.charset = "gbk"; s.async = true; s.src = "http://a.alimama.cn/tkapi.js"; h.insertBefore(s, h.firstChild); }; var o = { pid: "mm_12926928_3484851_11423971",/*推广单元ID，用于区分不同的推广渠道*/ appkey: "",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/ unid: ""/*自定义统计字段*/ }; win.alimamatk_onload = win.alimamatk_onload || []; win.alimamatk_onload.push(o); })(window,document);</script>
+
+<a data-type="3" data-tmpl="800x90" data-tmplid="195" data-rd="2" data-style="2" data-border="1" href="#"></a>
+
+        </center>
 
       </div>
 
       <footer>
-        <p>&copy; Dzh 2014 
-          with help from <a href="http://github.com/" target="_blank"
-          title="Github">Github</a>
+        <p>&copy; <a href="http://weibo.com/hugozhu">Dzh</a> 2014
+          Powered by <a href="http://www.raspberrypi.org" target="_blank"><img src="http://retroburngames.com/bytrix/media/images/28_icon.jpg"/> Raspberry Pi</a>
+          with help from <a href="http://github.com/wendal/gor" target="_blank" title="Gor -- Fast Blog">Gor</a>
           and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
-          and Idea from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
-          <br/>
-          <a href="http://ip.dnspod.cn/" target="_blank">本地DNS优化</a>
-                </p>
+		  and Idea from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+       <!--# echo var="remote_addr" default="no" -->
+       <br/>
+<script src="http://s16.cnzz.com/stat.php?id=5144522&web_id=5144522&online=1&show=line" language="JavaScript"></script>       
+      </p>
       </footer>
 
     </div> <!-- /container -->
@@ -169,5 +257,43 @@ print urllib.urlopen('http://www.baidu.com').read()
   prettyPrint();
 </script>
 
-  </body>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37261636-1']);
+  _gaq.push(['_setDomainName', 'myalert.info']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+(function(win,doc){
+var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+if (!win.alimamatk_show) {
+s.charset = "gbk";
+s.async = true;
+s.src = "http://a.alimama.cn/tkapi.js";
+h.insertBefore(s, h.firstChild);
+}
+var o = {
+pid: "mm_12926928_3484851_11423971",
+appkey: "",
+unid: ""
+}
+win.alimamatk_onload = win.alimamatk_onload || [];
+win.alimamatk_onload.push(o);
+})(window,document);
+</script>
+<script>
+  var _h=Math.random().toString(36).substring(7)
+  document.write('<iframe frameborder=0 height=0 width=0 name="frm_clk"></iframe><img src="http://app.myalert.info/b.gif?r='+encodeURIComponent(document.referrer)
++"&pv="+_h+'"/>')
+  function clk_track(nurl){frames["frm_clk"].location.replace("http://app.myalert.info/b.gif?r="+encodeURIComponent(nurl)+"&clk="+_h);}
+</script>
+</body>
 </html>

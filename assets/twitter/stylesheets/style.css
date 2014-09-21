@@ -36,12 +36,12 @@ html, body {
 }
 
 /* posts index */
-.post > h3.title {
+.post > h1.title {
   position:relative;
   padding-top:10px;
   border-top:3px solid #eee;
 }
-.post > h3.title span.date { 
+.post > h1.title span.date { 
   position:absolute;
   right:0;
   font-size:0.9em;
@@ -81,4 +81,24 @@ html, body {
   background:#57A957;
   border:1px solid #4C964D;
   color:#FFF;
+}
+
+.brand {  
+  background:url(http://tp3.sinaimg.cn/1808008002/50/5649301600/1); 
+  background-size:40px 40px; 
+  background-repeat: no-repeat;   
+}
+.row h1 {
+  font-size: 16px;
+}
+.row h2 {
+  font-size: 14px;
+}
+.row h3 {
+  font-size: 12px;
+}
+
+td {
+  border: 1px solid #eee;
+  padding: 3px 6px;
 }

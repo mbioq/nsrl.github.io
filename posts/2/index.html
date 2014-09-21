@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>nsrl&#39;s blog Page 2 - When Go meets Raspberry Pi</title>
+  
+    <meta name="description" content="动态根据宽带外网IP更新dnspod登记的域名, Go语言实现 树莓派">
+  
+    <meta name="author" content="Dzh">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/twitter/stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/twitter/stylesheets/style.css" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/twitter/widgets/google_prettify/stylesheets/twitter-bootstrap.css" type="text/css" rel="stylesheet" media="all">
+
+
+  <link rel="shortcut icon" href="http://tp3.sinaimg.cn/1808008002/50/5649301600/1">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+<a href="https://github.com/hugozhu"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+
+    <div class="navbar">      
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/" style="padding-left:46px;">nsrl&#39;s blog</a>
+          <ul class="nav">
+            
+              
+
+
+  <li><a href="/archive">Archive</a></li>
+
+
+            
+              
+
+
+  <li><a href="/tags">Tags</a></li>
+
+
+            
+              
+
+
+  <li><a href="/categories">Categories</a></li>
+
+
+            
+              
+
+
+  <li><a href="/pages">Pages</a></li>
+
+
+            
+              
+
+
+  <li><a href="/about">About Me</a></li>
+
+
+            
+            <li style="padding-left:10px">
+              <form class="navbar-search pull-right" method="GET" action="https://www.google.com/search">
+                <input type="text" name="as_q" class="search-query" placeholder=" Search... ">
+                <input type="hidden" name="as_sitesearch" value="hugozhu.myalert.info">
+              </form>               
+            </li>
+          </ul>
+        </div>
+      </div>     
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>Blogs</h1>
+</div>
+
+
+<div class="row">
+  <div class="span12">
+
+    <div class="pagination">
+      <ul>
+      
+        
+        
+          <li><a href="//posts/1/">1</a></li>
+        
+      
+        
+          <li class="active"><a href="//posts/2/">2</a></li>
+        
+        
+      
+        
+        
+          <li><a href="//posts/3/">3</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/4/">4</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/5/">5</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/6/">6</a></li>
+        
+      
+      </ul>
+    </div>
+
+
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/07/21/42-sharp-GP2Y1010AU0F-optical-dust-sensor.html">使用夏普GP2Y1010AU0F灰尘传感器检测空气质量</a> <span class="date">2013-07-21</span></h1>
+
+        <p>夏普<a href="http://item.taobao.com/item.htm?spm=a230r.1.14.1.X4yMiN&amp;id=25584528001&amp;_u=oqa3375a">GP2Y1010AU0F</a>灰尘传感器价格较便宜，能检测出室内空气中的灰尘和烟尘含量。另外还有韩国SYHITECH生产的<a href="http://item.taobao.com/item.htm?spm=a230r.1.14.9.NNhRMO&amp;id=15543884159">DSM501A</a>粉尘传感器也有类似功能。</p>
+
+<h1><a style="display: block;" name="检测原理" href="#检测原理"></a>检测原理</h1>
+
+<p>其原理如下图，传感器中心有个洞可以让空气自由流过，定向发射LED光，通过检测经过空气中灰尘折射过后的光线来判断灰尘的含量。</p>
+
+
+        <div class="more">
+          <a href="/2013/07/21/42-sharp-GP2Y1010AU0F-optical-dust-sensor.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/07/21/41-use-phantomjs-on-raspberry-pi-to-login-weibo.html">在树莓派上使用Phantomjs自动登录微博</a> <span class="date">2013-07-21</span></h1>
+
+        <p>使用过新浪开放平台的朋友都知道用户对小应用（用户数较少的）的授权Token很容易<a href="http://open.weibo.com/wiki/授权机制说明#.E6.8E.88.E6.9D.83.E6.9C.89.E6.95.88.E6.9C.9F">过期</a>，自动续期要求授权过的用户在过期前重新打开授权页。如果你想实现一个自动备份自己微博的App，就不得每天（周）自己去访问授权页（想死的心都有了吧？）。这里介绍一种通过脚本自动登录微博获取最新oAuth token的方法（需要微博登录名和密码），合适自己玩。将脚本部署在树莓派上后，我再也不用每周都去登录一次授权页了，只是收到报警消息后（经常是帐号被冻结了）需要手动处理一下。</p>
+
+<h1><a style="display: block;" name="phantomjs" href="#phantomjs"></a>Phantomjs</h1>
+
+<p><img src="http://phantomjs.org/images/phantomjs-logo.png"/></p>
+
+<p><a href="http://phantomjs.org/">Phantomjs</a> 是一个开源的，没有界面可运行在命令行，跨平台，基于WebKit的全功能浏览器，可以用来做网站自动化测试。从源代码<a href="http://phantomjs.org/build.html">编译</a>比较费时间，可以直接下载<a href="http://phantomjs.org/download.html">二进制版本</a>，树莓派的版本在<a href="https://github.com/aeberhardo/phantomjs-linux-armv6l">这里</a>可下载。Phantomjs下载好了后就一个可执行文件，依赖非常少，我很喜欢这种方式。</p>
+
+
+        <div class="more">
+          <a href="/2013/07/21/41-use-phantomjs-on-raspberry-pi-to-login-weibo.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/07/11/40-try-out-sublime-3-beta-on-mac.html">在Mac上使用Sublime 3写Go代码</a> <span class="date">2013-07-11</span></h1>
+
+        <p><img src="http://www.sublimetext.com/anim/rename2_packed.png" width="540"/></p>
+
+<p><a href="http://www.sublimetext.com">Sublime</a> 是一个相当好用的文本编辑器，界面简洁，功能强大。最近<a href="http://www.sublimetext.com/3">Sublime 3 Beta</a> 出来了, 体验了一下，发现启动速度比之前快了很多。</p>
+
+<h1><a style="display: block;" name="下载安装" href="#下载安装"></a>下载安装</h1>
+
+<p>下载地址： <a href="http://www.sublimetext.com/3">http://www.sublimetext.com/3</a></p>
+
+<h1><a style="display: block;" name="安装package-control" href="#安装package-control"></a>安装Package Control</h1>
+
+
+        <div class="more">
+          <a href="/2013/07/11/40-try-out-sublime-3-beta-on-mac.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/07/11/39-replace-usb-disk-on-raspberry-pi.html">替换树莓派的U盘</a> <span class="date">2013-07-11</span></h1>
+
+        <p>除了SD卡上的存储，树莓派还可以使用U盘来做存储，有时候我们可能需要替换已有的U盘为更大容量的。在Mac上可以采用下面的方法：</p>
+
+<ol>
+<li><p>备份已有的U盘，把U盘从树莓派上拔下来插在Mac上，找出U盘对应的盘符（下例为<code>/dev/disk2</code>）</p>
+
+<pre><code>20:51:19 hugozhu-mac-mini ~ $ diskutil list
+/dev/disk0
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                        *500.1 GB   disk0
+   1:                        EFI                         209.7 MB   disk0s1
+   2:                  Apple_HFS Macintosh HD            499.2 GB   disk0s2
+   3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
+/dev/disk2
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *2.1 GB     disk2
+</code></pre></li>
+</ol>
+
+
+        <div class="more">
+          <a href="/2013/07/11/39-replace-usb-disk-on-raspberry-pi.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/06/30/38-java-volatile-variable.html">Java并发中正确使用volatile</a> <span class="date">2013-06-30</span></h1>
+
+        <p>前几天并发编程群里有同学对volatile的用法提出了疑问，刚好我记得Twitter有关实时搜索的这个<a href="http://2011.lucene-eurocon.org/attachments/0002/8787/Busch_twitter_realtime_search_eurocon_11.pdf">PPT</a>对这个问题解释的很清晰并有一个实际的应用场景，于是周末把这个问题摘录了一些和并发相关的内容如下：</p>
+
+<h1><a style="display: block;" name="并发---定义" href="#并发---定义"></a>并发 - 定义</h1>
+
+<h2><a style="display: block;" name="悲观锁---pressimistic-locking" href="#悲观锁---pressimistic-locking"></a>悲观锁 - Pressimistic locking</h2>
+
+<ol>
+<li>一个线性在执行一个操作时持有对一个资源的独占锁。（互斥）</li>
+<li>一般用在冲突比较可能发生的场景下</li>
+</ol>
+
+
+        <div class="more">
+          <a href="/2013/06/30/38-java-volatile-variable.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/06/24/37-tcpdump_on_android.html">在Android上使用tcpdump</a> <span class="date">2013-06-24</span></h1>
+
+        <p>tcpdump工具是分析网络协议和数据包的利器，也可以在Android上使用（需要root）。</p>
+
+<p>首先在android上安装tcpdump</p>
+
+<pre><code>wget http://www.strazzere.com/android/tcpdump
+adb push tcpdump /data/local/tmp/tcpdump
+adb chmod 755 /data/local/tmp/tcpdump
+</code></pre>
+
+
+        <div class="more">
+          <a href="/2013/06/24/37-tcpdump_on_android.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/06/01/36-use-ping-to-check-network-connectivity.html">使用Ping来检查网络连通性</a> <span class="date">2013-06-01</span></h1>
+
+        <p>树莓派使用了一个无线网卡连接家里的无线路由器，在实际使用过程中发现连续运行多天后会掉线，而且掉线后基本上就再也连不上网了，需要重启树莓派才能恢复，十分麻烦。</p>
+
+<p>假设无线路由器IP是192.168.1.1，于是每隔15分钟检查一下，是否能从树莓派上ping通路由器；如果不能则重启无线网络，脚本如下：</p>
+
+<p><strong>network.sh</strong></p>
+
+<pre><code>#!/bin/bash
+
+export PATH=/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin
+
+ping_count() {
+  count=0
+  `timeout 5 ping 192.168.1.1 | while read LINE; do
+  {
+        if [[ &quot;${LINE}&quot; =~ &quot;64 bytes from&quot; ]]; then
+                let &quot;count = $count + 1&quot;
+                echo &quot;export count=$count&quot;
+        fi
+  }
+  done`
+  echo $count
+}
+
+
+if [[ $(ping_count) &lt; 1 ]]; then
+        ifconfig wlan0
+        ifconfig wlan0 down
+        sleep 1
+        ifconfig wlan0 up
+        sleep 1
+        netcfg -r wlan0-Hugo-Nas
+        sleep 5
+        if [[ $(ping_count) &lt; 1 ]]; then
+                echo &quot;Fatal error: wifi is down, rebooting now...&quot;
+                reboot
+        fi
+fi
+</code></pre>
+
+
+        <div class="more">
+          <a href="/2013/06/01/36-use-ping-to-check-network-connectivity.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/05/14/35-understanding-output.html">树莓派的GPIO接口输出电流限制</a> <span class="date">2013-05-14</span></h1>
+
+        <p>树莓派提供了一个连接头让我们访问CPU的17个GPIO接口，如下图</p>
+
+<p><img src="https://www.evernote.com/shard/s26/sh/92d52938-5bd9-46a7-9b05-478e9f30f5d7/b29dcc510983784a07472c8282330b30/deep/0/Screenshot%205/14/13%208:51%20PM.png"/></p>
+
+<p>这些接口可配置成输入或输出。本文主要讨论GPIO引脚作为输出时电流的限制。</p>
+
+<h1><a style="display: block;" name="阻抗-(impendance)" href="#阻抗-(impendance)"></a>阻抗 (impendance)</h1>
+
+<p>阻抗和和电阻的区别（resistance）在于电阻的阻值是固定的，不会随着电流变化，阻抗则不然，可能随着外部变化，如电流或频率变化。从另一个角度来说，电阻是线性的，但阻抗不是。比如放大器的阻抗会随着输出的信号频率变化。</p>
+
+
+        <div class="more">
+          <a href="/2013/05/14/35-understanding-output.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/05/13/34-use-74HC595-8-bit-shift-register-with-raspberry-pi.html">使用8位移位寄存器74HC595扩展树莓派的IO端口</a> <span class="date">2013-05-13</span></h1>
+
+        <p>树莓派的GPIO接口数目有限，驱动一个步进电机需要占用4个， 一个Nokia 5110液晶也要占4个， 传感器输入至少需要一个，多玩几个外设后接口就不够用了。如果接口可以复用就可以让树莓派驱动更多的外设了，本文讨论如何使用74HC595集成电路芯片来扩展树莓派的I/O接口。</p>
+
+<h1><a style="display: block;" name="芯片介绍" href="#芯片介绍"></a>芯片介绍</h1>
+
+<p>SN74HC595N是德州仪器公司生产的集成电路芯片，是一个8位串行输入变串行输出或并行输出移位寄存器，具有高阻关断，高电平和低电平三态输出。在IO扩充上，可以最多串联15片，也就是高达120个IO扩充。</p>
+
+<p><img src="https://www.evernote.com/shard/s26/sh/b90034cc-cdf8-426d-a79d-16bbbcbb49b2/0ba3371f3039afa71a17bad845eede7a/deep/0/Screenshot%205/12/13%2010:42%20PM.png"/></p>
+
+
+        <div class="more">
+          <a href="/2013/05/13/34-use-74HC595-8-bit-shift-register-with-raspberry-pi.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+      <div class="post">
+        <h1 class="title"><a href="/2013/04/22/33-use-google-app-engine-failover-your-blog-between-raspberrypi-and-github.html">树莓派网站容灾：利用DNSPod，Google App Engine和Github</a> <span class="date">2013-04-22</span></h1>
+
+        <h1><a style="display: block;" name="背景介绍" href="#背景介绍"></a>背景介绍</h1>
+
+<p><a href="http://hugozhu.myalert.info/2013/02/27/在Pi和Github上搭建自己的个人博客.html">把网站托管在树莓派上</a>后如果家里停电或是宽带故障，会造成网站中断。本文提供一个免费的解决方案（前提是你需要有自己的一个域名，并由DNSPod解析）</p>
+
+<h1><a style="display: block;" name="dnspod" href="#dnspod"></a>DNSPod</h1>
+
+<p>首先需要在DNSPod里设置好需要failover的域名CNAME：比如<code>hugozhu.myalert.info</code></p>
+
+<p><img src="https://www.evernote.com/shard/s26/sh/95d90628-5c74-4773-aaff-c2110e1863a6/6b592609ef02c42e46664d1fa1493e1c/deep/0/Screenshot%204/22/13%204:57%20PM.png" width="528"/></p>
+
+
+        <div class="more">
+          <a href="/2013/04/22/33-use-google-app-engine-failover-your-blog-between-raspberrypi-and-github.html" class="btn btn-small">阅读全文</a>
+        </div>
+      </div>
+    
+
+    <div class="pagination">
+      <ul>
+      
+        
+        
+          <li><a href="//posts/1/">1</a></li>
+        
+      
+        
+          <li class="active"><a href="//posts/2/">2</a></li>
+        
+        
+      
+        
+        
+          <li><a href="//posts/3/">3</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/4/">4</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/5/">5</a></li>
+        
+      
+        
+        
+          <li><a href="//posts/6/">6</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+        <hr/>
+
+        <center>
+
+<script type="text/javascript"> (function(win,doc){ var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0]; if (!win.alimamatk_show) { s.charset = "gbk"; s.async = true; s.src = "http://a.alimama.cn/tkapi.js"; h.insertBefore(s, h.firstChild); }; var o = { pid: "mm_12926928_3484851_11423971",/*推广单元ID，用于区分不同的推广渠道*/ appkey: "",/*通过TOP平台申请的appkey，设置后引导成交会关联appkey*/ unid: ""/*自定义统计字段*/ }; win.alimamatk_onload = win.alimamatk_onload || []; win.alimamatk_onload.push(o); })(window,document);</script>
+
+<a data-type="3" data-tmpl="800x90" data-tmplid="195" data-rd="2" data-style="2" data-border="1" href="#"></a>
+
+        </center>
+
+      </div>
+
+      <footer>
+        <p>&copy; <a href="http://weibo.com/hugozhu">Dzh</a> 2014
+          Powered by <a href="http://www.raspberrypi.org" target="_blank"><img src="http://retroburngames.com/bytrix/media/images/28_icon.jpg"/> Raspberry Pi</a>
+          with help from <a href="http://github.com/wendal/gor" target="_blank" title="Gor -- Fast Blog">Gor</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+		  and Idea from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+       <!--# echo var="remote_addr" default="no" -->
+       <br/>
+<script src="http://s16.cnzz.com/stat.php?id=5144522&web_id=5144522&online=1&show=line" language="JavaScript"></script>       
+      </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+<script src="//cdnjscn.b0.upaiyun.com/libs/prettify/r298/prettify.min.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37261636-1']);
+  _gaq.push(['_setDomainName', 'myalert.info']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script type="text/javascript">
+(function(win,doc){
+var s = doc.createElement("script"), h = doc.getElementsByTagName("head")[0];
+if (!win.alimamatk_show) {
+s.charset = "gbk";
+s.async = true;
+s.src = "http://a.alimama.cn/tkapi.js";
+h.insertBefore(s, h.firstChild);
+}
+var o = {
+pid: "mm_12926928_3484851_11423971",
+appkey: "",
+unid: ""
+}
+win.alimamatk_onload = win.alimamatk_onload || [];
+win.alimamatk_onload.push(o);
+})(window,document);
+</script>
+<script>
+  var _h=Math.random().toString(36).substring(7)
+  document.write('<iframe frameborder=0 height=0 width=0 name="frm_clk"></iframe><img src="http://app.myalert.info/b.gif?r='+encodeURIComponent(document.referrer)
++"&pv="+_h+'"/>')
+  function clk_track(nurl){frames["frm_clk"].location.replace("http://app.myalert.info/b.gif?r="+encodeURIComponent(nurl)+"&clk="+_h);}
+</script>
+</body>
+</html>
