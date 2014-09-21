@@ -9,6 +9,11 @@
 		<changefreq>weekly</changefreq>
 	</url>
 	<url>
+		<loc>http://nsrl.github.io/default/go-windows-goexif/</loc>
+		<lastmod>2014-09-21</lastmod>
+		<changefreq>weekly</changefreq>
+	</url>
+	<url>
 		<loc>http://nsrl.github.io/python/Python-urllib/</loc>
 		<lastmod>2014-09-21</lastmod>
 		<changefreq>weekly</changefreq>

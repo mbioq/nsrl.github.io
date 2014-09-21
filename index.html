@@ -106,6 +106,27 @@
 </div>
 
 <div class="post">
+  <h3 class="title"><a href="/default/go-windows-goexif/">go-windows-goexif</a> <span class="date">2014-09-21</span></h3>
+
+  <p>纯go版:</p>
+
+<pre><code>go get github.com/rwcarlsen/goexif/exif
+</code></pre>
+
+<p>cgo版:</p>
+
+<pre><code># 1. 下载libexif源码,获取头文件
+# 2. 下载exif.dll, 记得下载cygwin下的版本, 直接google得到的版本不靠谱,版本太老
+go get github.com/gosexy/exif
+</code></pre>
+
+
+  <div class="more">
+    <a href="/default/go-windows-goexif/" class="btn">read more..</a>
+  </div>
+</div>
+
+<div class="post">
   <h3 class="title"><a href="/python/Python-urllib/">Python-urllib</a> <span class="date">2014-09-21</span></h3>
 
   <p>urllib模块提供的上层接口，使我们可以像读取本地文件一样读取www和ftp上的数据。每当使用这个模块的时候，老是会想起公司产品的客户端，同事用C++下载Web上的图片，那种“痛苦”的表情。我以前翻译过libcurl教程，这是在C/C++环境下比较方便实用的网络操作库，相比起 libcurl，Python的urllib模块的使用门槛则低多了。可能有些人又会用效率来批评Python，其实在操作网络，或者在集群交互的时候， 语言的执行效率绝不是瓶颈。这种情况下，一个比较好的方法是，将python嵌入到C/C++中，让Python来完成一些不是核心的逻辑处理。又扯远了，废话少说，开始urllib之旅吧~~ （前几天我用这个模块写了个蜘蛛，感兴趣的同学可以在以前的博客中找到代码）
