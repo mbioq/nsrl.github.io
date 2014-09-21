@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>首页</title>
+    <title>go-windows-goexif</title>
+  
+    <meta name="description" content="Go goexif">
   
     <meta name="author" content="Dzh">
 
@@ -77,28 +79,13 @@
     <div class="container">
 
       <div class="content">
-        
-<div class="page-header">
-  <h1>首页 </h1>
+        <div class="page-header">
+  <h1>go-windows-goexif </h1>
 </div>
 
 <div class="row">
-  <div class="span12">
-    
-<h2>Gor已经为你编译完成了</h2>
-<p>
-  这段文字位于pages/index.html ,使用以下命令获取帮助或访问gor官网
-</p>
-<pre><code>gor help</code></pre>
-
-
-<h2>最近更新</h2>
-
-
-<div class="post">
-  <h3 class="title"><a href="/2014/09/21/go-windows-goexif.html">go-windows-goexif</a> <span class="date">2014-09-21</span></h3>
-
-  <p>纯go版:</p>
+  <div class="span8">
+    <p>纯go版:</p>
 
 <pre><code>go get github.com/rwcarlsen/goexif/exif
 </code></pre>
@@ -110,37 +97,67 @@
 go get github.com/gosexy/exif
 </code></pre>
 
+    <hr>
+    <div class="pagination">
+      <ul>
+        <ul>
+          
+          
+            <li class="prev disabled"><a>&larr; Previous</a></li>
+          
 
-  <div class="more">
-    <a href="/2014/09/21/go-windows-goexif.html" class="btn">read more..</a>
+            <li><a href="/archive">Archive</a></li>
+
+          
+            <li class="next"><a href="/2014/09/21/Python-urllib.html" title="Python-urllib">Next &rarr;</a></li>
+          
+          
+        </ul>
+      </ul>
+    </div>
+    <hr>
+    
+<div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'jekyllbootstrap'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
   </div>
-</div>
-
-<div class="post">
-  <h3 class="title"><a href="/2014/09/21/Python-urllib.html">Python-urllib</a> <span class="date">2014-09-21</span></h3>
-
-  <p>urllib模块提供的上层接口，使我们可以像读取本地文件一样读取www和ftp上的数据。每当使用这个模块的时候，老是会想起公司产品的客户端，同事用C++下载Web上的图片，那种“痛苦”的表情。我以前翻译过libcurl教程，这是在C/C++环境下比较方便实用的网络操作库，相比起 libcurl，Python的urllib模块的使用门槛则低多了。可能有些人又会用效率来批评Python，其实在操作网络，或者在集群交互的时候， 语言的执行效率绝不是瓶颈。这种情况下，一个比较好的方法是，将python嵌入到C/C++中，让Python来完成一些不是核心的逻辑处理。又扯远了，废话少说，开始urllib之旅吧~~ （前几天我用这个模块写了个蜘蛛，感兴趣的同学可以在以前的博客中找到代码）
-先看一个例子，这个例子把Google首页的html抓取下来并显示在控制台上：</p>
-
-<pre><code># 别惊讶，整个程序确实只用了两行代码  
-import urllib  
-print urllib.urlopen('http://www.baidu.com').read() 
-</code></pre>
-
-<hr />
-
-<pre><code># 别惊讶，整个程序确实只用了两行代码
-import urllib
-print urllib.urlopen('http://www.baidu.com').read()
-#urllib.urlopen(url[, data[, proxies]]) :
-</code></pre>
-
-
-  <div class="more">
-    <a href="/2014/09/21/Python-urllib.html" class="btn">read more..</a>
-  </div>
-</div>
-
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>2014-09-21</span></div>
+    <br>
+    <h4>Categories</h4>
+    <ul class="tag_box">
+    
+      <li>
+  <a href="/categories/#Go-ref">Go <span>1</span></a>
+</li>
+    
+    </ul>
+    <br>
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    
+      <li>
+  <a href="/tags/#Go-ref">Go <span>1</span></a>
+</li>
+    
+      <li>
+  <a href="/tags/#goexif-ref">goexif <span>1</span></a>
+</li>
+    
+    </ul>
   </div>
 </div>
 
